@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dashboard.dart'; // Import file dashboard
 
 void main() {
   runApp(const MyApp());
@@ -114,6 +115,11 @@ class LoginPage extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {
                   // Tambahkan navigasi ke halaman dashboard
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const DashboardPage()),
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.purple,
