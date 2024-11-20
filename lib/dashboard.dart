@@ -33,6 +33,7 @@ class DashboardPage extends StatelessWidget {
             onPressed: () {},
             icon: Icon(Icons.shopping_cart, color: Colors.white),
           ),
+          // ICON BUTTON HALAMAN PROFILE
           IconButton(
             onPressed: () {
               Navigator.push(
@@ -75,7 +76,7 @@ class DashboardPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16),
-            // Product Grid
+            // Product Grid (Untuk List Produk dengan metode grid)
             Expanded(
               child: GridView.builder(
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -367,6 +368,12 @@ final List<Map<String, dynamic>> products = [
   {
     'title': 'Tukang Masak',
     'price': '30.000',
+    'image':
+        'https://cdn.pixabay.com/photo/2017/08/02/14/26/chef-2578441_1280.png',
+  },
+  {
+    'title': 'Tukang Maling',
+    'price': '35.000',
     'image':
         'https://cdn.pixabay.com/photo/2017/08/02/14/26/chef-2578441_1280.png',
   },
