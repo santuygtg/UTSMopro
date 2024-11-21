@@ -40,7 +40,7 @@ class LoginPage extends StatelessWidget {
               Column(
                 children: [
                   Icon(
-                    Icons.circle,
+                    Icons.ssid_chart,
                     size: 80,
                     color: Colors.purple,
                   ),
@@ -59,7 +59,7 @@ class LoginPage extends StatelessWidget {
 
               // Selamat Datang dan Keterangan
               Text(
-                "Selamat Datang\nDi Aplikasi Pemesanan Jasa",
+                "Selamat Datang Di Aplikasi Pemesanan Jasa",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 18,
@@ -69,7 +69,7 @@ class LoginPage extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                "Nama Anda - NIM Anda",
+                "M.FANI ANDRIANSAH- 4122005",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 14,

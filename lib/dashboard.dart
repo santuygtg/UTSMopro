@@ -279,11 +279,11 @@ class ProfilePage extends StatelessWidget {
                 CircleAvatar(
                   radius: 50,
                   backgroundImage: NetworkImage(
-                      'https://via.placeholder.com/150'), // Ganti sesuai gambar profil
+                      'https://www.google.com/imgres?q=foto%20kartun%20tukang%20wifi&imgurl=https%3A%2F%2Fimg.mbizmarket.co.id%2Fproducts%2Fthumbs%2F343x343%2F2021%2F07%2F22%2Fcc3b3058c7bef0ee99fdda0eed810cac.jpg&imgrefurl=https%3A%2F%2Fwww.mbizmarket.co.id%2Fp%2Fgumibali-computer-WLgR%2Fcatalog%3Fpage%3D2&docid=n5c8IKx0fthwGM&tbnid=my1j8zraomxhaM&vet=12ahUKEwjigLP84uuJAxX4zDgGHdirM7cQM3oECHIQAA..i&w=343&h=343&hcb=2&ved=2ahUKEwjigLP84uuJAxX4zDgGHdirM7cQM3oECHIQAA'), // Ganti sesuai gambar profil
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  "Sarah Chloe",
+                  "M.FANI ANDRIANSAH",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -306,9 +306,10 @@ class ProfilePage extends StatelessWidget {
             child: ListView(
               padding: const EdgeInsets.all(16),
               children: [
-                _buildMenuItem("Alamat", "Atur alamat anda", Icons.location_on),
-                _buildMenuItem("Rekening Bank", "Daftar rekening bank",
-                    Icons.account_balance),
+                _buildMenuItem(
+                    "Alamat", "Mancilan,Mojoagung", Icons.location_on),
+                _buildMenuItem(
+                    "Rekening Bank", "009898213", Icons.account_balance),
                 _buildMenuItem("Pembayaran Instan", "E-Wallet, Kartu kredit",
                     Icons.payment),
                 _buildMenuItem("Keamanan Akun",
@@ -350,31 +351,26 @@ final List<Map<String, dynamic>> products = [
   {
     'title': 'Laundry Cuci Bersih',
     'price': '10.000',
-    'image':
-        'https://cdn.pixabay.com/photo/2016/09/26/17/29/laundry-1693380_1280.png',
+    'image': 'loundry.jpg',
   },
   {
     'title': 'Asisten Rumah Tangga',
     'price': '20.000',
-    'image':
-        'https://cdn.pixabay.com/photo/2017/09/16/16/09/cleaning-2752959_1280.jpg',
+    'image': 'asisten-rumah-tangga.jpg',
   },
   {
     'title': 'Tukang Kebun',
     'price': '25.000',
-    'image':
-        'https://cdn.pixabay.com/photo/2014/04/02/16/27/gardener-308012_1280.png',
+    'image': 'tukang kebun.jpeg',
   },
   {
     'title': 'Tukang Masak',
     'price': '30.000',
-    'image':
-        'https://cdn.pixabay.com/photo/2017/08/02/14/26/chef-2578441_1280.png',
+    'image': 'tukang masak.jpeg',
   },
   {
-    'title': 'Tukang Maling',
+    'title': 'Tukang WIFI',
     'price': '35.000',
-    'image':
-        'https://cdn.pixabay.com/photo/2017/08/02/14/26/chef-2578441_1280.png',
+    'image': 'tukang wifi.jpeg',
   },
 ];
