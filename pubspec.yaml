@@ -58,8 +58,9 @@ flutter:
 
   # Menambahkan daftar assets
   assets:
-    - assets/loundry.jpg
-    - assets/asisten-rumah-tangga.jpg
+    - assets/images/loundry.jpg
+    - assets/images/asisten-rumah-tangga.jpg
+    - assets/images/fani.jpg
     # Mendeklarasikan folder untuk assets gambar
 
   # An image asset can refer to one or more resolution-specific "variants", see

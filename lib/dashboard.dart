@@ -222,7 +222,7 @@ class ProductDetailPage extends StatelessWidget {
             const SizedBox(height: 16),
             // Deskripsi
             Text(
-              "Jaminan cuci bersih, wangi, dan rapi dengan hasil setrika yang memuaskan. Harga tertera untuk per kilogram.",
+              "Jaminan Internet wifi tercepat tiada banding,Segera gunakanlah Jasa kami, Wifi Irmas.",
               style: TextStyle(
                 color: Colors.white70,
                 fontSize: 14,
@@ -234,6 +234,9 @@ class ProductDetailPage extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 // Tambahkan aksi checkout di sini
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('Checkout berhasil!')),
+                );
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.purple,
@@ -278,8 +281,8 @@ class ProfilePage extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 50,
-                  backgroundImage: NetworkImage(
-                      'https://www.google.com/imgres?q=foto%20kartun%20tukang%20wifi&imgurl=https%3A%2F%2Fimg.mbizmarket.co.id%2Fproducts%2Fthumbs%2F343x343%2F2021%2F07%2F22%2Fcc3b3058c7bef0ee99fdda0eed810cac.jpg&imgrefurl=https%3A%2F%2Fwww.mbizmarket.co.id%2Fp%2Fgumibali-computer-WLgR%2Fcatalog%3Fpage%3D2&docid=n5c8IKx0fthwGM&tbnid=my1j8zraomxhaM&vet=12ahUKEwjigLP84uuJAxX4zDgGHdirM7cQM3oECHIQAA..i&w=343&h=343&hcb=2&ved=2ahUKEwjigLP84uuJAxX4zDgGHdirM7cQM3oECHIQAA'), // Ganti sesuai gambar profil
+                  backgroundImage: AssetImage(
+                      'assets/images/fani.jpg'), // Ganti sesuai gambar profil
                 ),
                 const SizedBox(height: 8),
                 Text(
@@ -349,28 +352,28 @@ class ProfilePage extends StatelessWidget {
 // Data Produk
 final List<Map<String, dynamic>> products = [
   {
-    'title': 'Laundry Cuci Bersih',
-    'price': '10.000',
-    'image': 'loundry.jpg',
+    'title': 'Tukang WIFI',
+    'price': '35.000',
+    'image': 'assets/images/tukang wifi.jpeg',
   },
   {
     'title': 'Asisten Rumah Tangga',
     'price': '20.000',
-    'image': 'asisten-rumah-tangga.jpg',
+    'image': 'assets/images/asisten-rumah-tangga.jpg',
   },
   {
     'title': 'Tukang Kebun',
     'price': '25.000',
-    'image': 'tukang kebun.jpeg',
+    'image': 'assets/images/tukang kebun.jpeg',
   },
   {
     'title': 'Tukang Masak',
     'price': '30.000',
-    'image': 'tukang masak.jpeg',
+    'image': 'assets/images/tukang masak.jpeg',
   },
   {
-    'title': 'Tukang WIFI',
-    'price': '35.000',
-    'image': 'tukang wifi.jpeg',
+    'title': 'Laundry Cuci Bersih',
+    'price': '10.000',
+    'image': 'assets/images/loundry.jpg',
   },
 ];
